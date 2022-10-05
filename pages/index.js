@@ -43,7 +43,7 @@ export default function Home({ allPostsData }) {
           {allPostsData.map(({ id, title, date, thumbnail }) => (
             <article key={id}>
               <Link href={`/posts/${id}`}>
-                <img src={`${thumbnail}`} className={styles.thumbnailImage} />
+                <Image src={`${thumbnail}`} className={styles.thumbnailImage} width={640} height={426} objectFit="cover"/>
               </Link>
               <Link href={`/posts/${id}`}>
                 <a className={utilStyle.boldText}>{title}</a>
