@@ -9,7 +9,7 @@ import { getPostsData } from "../lib/post";
 //ssgの場合
 export async function getStaticProps() {
   const allPostsData = getPostsData(); //id, title, date, thumbnail
-  console.log(allPostsData);
+  // console.log(allPostsData);
 
   return {
     props: {
@@ -34,16 +34,27 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={`${utilStyle.headingMd} ${utilStyle.smallContainer}`}>
-        <p>そろそろフロントエンドエンジニアになりたいコーダー3年目が、Next.jsのSSGを使って構築したブログです。</p>
+        <p className={utilStyle.position}>
+          そろそろフロントエンドエンジニアになりたいコーダー3年目が、Next.jsのSSGを使って構築したブログです。
+        </p>
       </section>
 
-      <section className={`${utilStyle.headingMd} ${utilStyle.padding1px}`}>
+      <div className={utilStyle.circle}></div>
+      <section
+        className={`${utilStyle.headingMd} ${utilStyle.padding1px} ${utilStyle.position}`}
+      >
         <h2>📝エンジニアのブログ</h2>
         <div className={styles.grid}>
           {allPostsData.map(({ id, title, date, thumbnail }) => (
             <article key={id}>
               <Link href={`/posts/${id}`}>
-                <Image src={`${thumbnail}`} className={styles.thumbnailImage} width={640} height={426} objectFit="cover"/>
+                <Image
+                  src={`${thumbnail}`}
+                  className={styles.thumbnailImage}
+                  width={640}
+                  height={426}
+                  objectFit="cover"
+                />
               </Link>
               <Link href={`/posts/${id}`}>
                 <a className={utilStyle.boldText}>{title}</a>

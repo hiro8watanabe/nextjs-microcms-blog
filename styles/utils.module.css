@@ -60,6 +60,23 @@
 }
 
 .boldText {
-  color: black;
+  color: #fff;
   font-weight: 550;
+}
+
+.circle {
+  max-width: 1100px;
+  max-height: 1100px;
+  width: 74vw;
+  height: 74vw;
+  top: -32vw;
+  left: -24vw;
+  border-radius: 50%;
+  background-color: #581818;
+  position: absolute;
+}
+
+.position {
+  position: relative;
+  z-index: 1;
 }

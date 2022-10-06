@@ -36,7 +36,7 @@ function Layout({ children, home }) {
       </header>
       <main>{children}</main>
       {!home && (
-        <div>
+        <div className={utilStyles.position}>
           <Link href="/">
             <a>◀ ホームへ戻る</a>
           </Link>

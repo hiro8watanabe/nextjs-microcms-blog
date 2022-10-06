@@ -28,7 +28,8 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article>
+      <div className={utileStyles.circle}></div>
+      <article className={utileStyles.position}>
         <h1 className={utileStyles.headingXl}>{postData.title}</h1>
         <div className={utileStyles.lightText}>{postData.date}</div>
         <div dangerouslySetInnerHTML={{ __html: postData.blogContentHTML }} />
