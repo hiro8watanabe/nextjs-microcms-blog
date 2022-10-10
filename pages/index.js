@@ -35,7 +35,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={`${utilStyle.headingMd} ${utilStyle.smallContainer}`}>
         <p className={utilStyle.position}>
-          そろそろフロントエンドエンジニアになりたいコーダー3年目が、Next.jsのSSGを使って構築したブログです。
+          業界3年目のコーダーがフロントエンドの学習のため、Next.jsのSSGを使って構築したブログです。
         </p>
       </section>
 
