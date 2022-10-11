@@ -2,21 +2,22 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Layout, { siteTitle } from "../components/Layout";
-import utilStyle from "../styles/utils.module.css";
+import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import { getPostsData } from "../lib/post";
+import { client } from "../lib/client";
+import { formatDate } from "../lib/util";
 
 //ssgの場合
-export async function getStaticProps() {
-  const allPostsData = getPostsData(); //id, title, date, thumbnail
-  // console.log(allPostsData);
+export const getStaticProps = async () => {
+  const data = await client.get({ endpoint: "blog" });
 
   return {
     props: {
-      allPostsData,
+      blog: data.contents,
     },
   };
-}
+};
 
 // //ssrの場合
 // export async function getServerSideProps(context) {
@@ -27,40 +28,48 @@ export async function getStaticProps() {
 //   };
 // }
 
-export default function Home({ allPostsData }) {
+export default function Home({ blog }) {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={`${utilStyle.headingMd} ${utilStyle.smallContainer}`}>
-        <p className={utilStyle.position}>
-          業界3年目のコーダーがフロントエンドの学習のため、Next.jsのSSGを使って構築したブログです。
+      <section
+        className={`${utilStyles.headingMd} ${utilStyles.smallContainer}`}
+      >
+        <p className={utilStyles.position}>
+          業界3年目のコーダーがフロントエンドの学習のため、Next.jsのSSGとMicroCMSを使って構築したJamstackブログです。
         </p>
       </section>
 
-      <div className={utilStyle.circle}></div>
+      <div className={utilStyles.circle}></div>
       <section
-        className={`${utilStyle.headingMd} ${utilStyle.padding1px} ${utilStyle.position}`}
+        className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.position}`}
       >
         <h2>📝エンジニアのブログ</h2>
         <div className={styles.grid}>
-          {allPostsData.map(({ id, title, date, thumbnail }) => (
-            <article key={id}>
-              <Link href={`/posts/${id}`}>
+          {blog.map((blog) => (
+            <article key={blog.id}>
+              <Link href={`/blog/${blog.id}`}>
                 <Image
-                  src={`${thumbnail}`}
+                  src={blog.thumbnail.url}
                   className={styles.thumbnailImage}
                   width={640}
                   height={426}
                   objectFit="cover"
                 />
               </Link>
-              <Link href={`/posts/${id}`}>
-                <a className={utilStyle.boldText}>{title}</a>
+              <Link href={`/blog/${blog.id}`}>
+                <a
+                  className={`${utilStyles.boldText} ${utilStyles.inlineBlock}`}
+                >
+                  {blog.title}
+                </a>
               </Link>
               <br />
-              <small className={utilStyle.lightText}>{date}</small>
+              <small className={utilStyles.lightText}>
+                {formatDate(blog.publishedAt)}
+              </small>
             </article>
           ))}
         </div>

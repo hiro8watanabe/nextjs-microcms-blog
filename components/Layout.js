@@ -36,7 +36,7 @@ function Layout({ children, home }) {
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={utilStyles.position}>
+        <div className={`${utilStyles.position} ${utilStyles.inner}`}>
           <Link href="/">
             <a>◀ ホームへ戻る</a>
           </Link>
