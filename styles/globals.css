@@ -9,6 +9,7 @@ body {
   /* background-color: #fbf5f5; */
   background-color: #1b1b1b;
   color: #fff;
+  overflow-wrap: break-word;
 }
 
 * {
