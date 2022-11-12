@@ -2,6 +2,7 @@ import Head from "next/head";
 import Layout from "../../components/Layout";
 import { client } from "../../lib/client";
 import utileStyles from "../../styles/utils.module.css";
+import { formatDate } from "../../lib/util";
 
 //SSG
 export const getStaticProps = async (context) => {
@@ -42,7 +43,7 @@ export default function BlogId({ blog }) {
       <div className={utileStyles.circle}></div>
       <article className={`${utileStyles.position} ${utileStyles.inner}`}>
         <h1 className={utileStyles.headingXl}>{blog.title}</h1>
-        <p className={utileStyles.lightText}>{blog.publishedAt}</p>
+        <p className={utileStyles.lightText}>{formatDate(blog.publishedAt)}</p>
         <div dangerouslySetInnerHTML={{ __html: `${blog.body}` }} />
       </article>
     </Layout>
