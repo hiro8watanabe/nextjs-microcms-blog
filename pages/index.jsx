@@ -61,6 +61,7 @@ export default function Home({ blog }) {
                     width={640}
                     height={426}
                     objectFit="cover"
+                    alt=""
                   />
 
                   {blog.title}

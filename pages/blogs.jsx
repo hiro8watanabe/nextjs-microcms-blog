@@ -58,6 +58,7 @@ export default function Blog({ blog }) {
                   width={640}
                   height={426}
                   objectFit="cover"
+                  alt=""
                 />
               </Link>
               <Link href={`/blog/${blog.id}`}>
