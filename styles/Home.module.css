@@ -21,7 +21,7 @@
   cursor: pointer;
 }
 
-.thumbnailImage:hover {
+.moveImg:hover .thumbnailImage {
   transform: translate(4px, 5px);
   box-shadow: none;
 }

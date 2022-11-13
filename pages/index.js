@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Layout, { siteTitle } from "../components/Layout";
-import utilStyles from "../styles/utils.module.css";
+import utilStyles from "../styles/Utils.module.css";
 import Link from "next/link";
 import { getPostsData } from "../lib/post";
 import { client } from "../lib/client";
@@ -33,6 +33,7 @@ export default function Home({ blog }) {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <section
         className={`${utilStyles.headingMd} ${utilStyles.smallContainer}`}
@@ -46,30 +47,30 @@ export default function Home({ blog }) {
       <section
         className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.position}`}
       >
-        <h2>📝エンジニアのブログ</h2>
+        <h2>新着記事一覧</h2>
         <div className={styles.grid}>
           {blog.map((blog) => (
             <article key={blog.id}>
               <Link href={`/blog/${blog.id}`}>
-                <Image
-                  src={blog.thumbnail.url}
-                  className={styles.thumbnailImage}
-                  width={640}
-                  height={426}
-                  objectFit="cover"
-                />
-              </Link>
-              <Link href={`/blog/${blog.id}`}>
                 <a
-                  className={`${utilStyles.boldText} ${utilStyles.inlineBlock}`}
+                  className={`${styles.moveImg} ${utilStyles.boldText} ${utilStyles.inlineBlock}`}
                 >
+                  <Image
+                    src={blog.thumbnail.url}
+                    className={styles.thumbnailImage}
+                    width={640}
+                    height={426}
+                    objectFit="cover"
+                  />
+
                   {blog.title}
+
+                  <br />
+                  <small className={utilStyles.lightText}>
+                    {formatDate(blog.publishedAt)}
+                  </small>
                 </a>
               </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                {formatDate(blog.publishedAt)}
-              </small>
             </article>
           ))}
         </div>

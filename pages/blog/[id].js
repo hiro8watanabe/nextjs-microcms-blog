@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Layout from "../../components/Layout";
 import { client } from "../../lib/client";
-import utileStyles from "../../styles/utils.module.css";
+// import postStyles from "../../styles/Post.module.css";
+import utileStyles from "../../styles/Utils.module.css";
 import { formatDate } from "../../lib/util";
 
 //SSG
