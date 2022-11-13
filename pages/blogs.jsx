@@ -28,9 +28,9 @@ export const getStaticProps = async () => {
 //   };
 // }
 
-export default function Home({ blog }) {
+export default function Blog({ blog }) {
   return (
-    <Layout home>
+    <Layout blogs>
       <Head>
         <title>{siteTitle}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -47,30 +47,31 @@ export default function Home({ blog }) {
       <section
         className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.position}`}
       >
-        <h2>新着記事一覧</h2>
+        <h2>制作ブログ一覧</h2>
         <div className={styles.grid}>
           {blog.map((blog) => (
             <article key={blog.id}>
               <Link href={`/blog/${blog.id}`}>
+                <Image
+                  src={blog.thumbnail.url}
+                  className={styles.thumbnailImage}
+                  width={640}
+                  height={426}
+                  objectFit="cover"
+                  alt=""
+                />
+              </Link>
+              <Link href={`/blog/${blog.id}`}>
                 <a
-                  className={`${styles.moveImg} ${utilStyles.boldText} ${utilStyles.inlineBlock}`}
+                  className={`${utilStyles.boldText} ${utilStyles.inlineBlock}`}
                 >
-                  <Image
-                    src={blog.thumbnail.url}
-                    className={styles.thumbnailImage}
-                    width={640}
-                    height={426}
-                    objectFit="cover"
-                  />
-
                   {blog.title}
-
-                  <br />
-                  <small className={utilStyles.lightText}>
-                    {formatDate(blog.publishedAt)}
-                  </small>
                 </a>
               </Link>
+              <br />
+              <small className={utilStyles.lightText}>
+                {formatDate(blog.publishedAt)}
+              </small>
             </article>
           ))}
         </div>

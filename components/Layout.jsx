@@ -18,6 +18,7 @@ function Layout({ children, home }) {
             <>
               <Image
                 src="/images/sns_icon_min.jpg"
+                alt=""
                 width={180}
                 height={180}
                 className={`${utilStyles.borderCircle} ${styles.headerHomeImage}`}
@@ -28,6 +29,7 @@ function Layout({ children, home }) {
             <>
               <Image
                 src="/images/sns_icon_min.jpg"
+                alt=""
                 width={140}
                 height={140}
                 className={`${utilStyles.borderCircle} ${styles.headerImage}`}
