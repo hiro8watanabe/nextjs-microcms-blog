@@ -1,0 +1,38 @@
+.section {
+background-color: #000;
+}
+
+.inner {
+  padding: 1rem;
+  max-width: 1244px;
+  margin: 0 auto;
+}
+/* 
+.container {
+  display: flex;
+  justify-content: space-between;
+} */
+
+@media screen and (min-width: 636px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.logoWrap {
+  max-width: 320px;
+}
+
+.lists {
+  padding-top: 2rem;
+}
+
+.list:not(:first-child) {
+  margin-top: 0.7rem;
+}
+
+.copy {
+  margin-top: 3rem;
+  text-align: center;
+}
