@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Layout, { siteTitle } from "../components/Layout";
+import { Layout, siteTitle } from "../components/Layout";
 import utilStyles from "../styles/Utils.module.css";
 import Link from "next/link";
 // import { getPostsData } from "../lib/post";
@@ -39,7 +39,9 @@ export default function Contact() {
           制作・相談などの各種お問い合わせはこちらから。
         </p>
 
-        <p className={`${utilStyles.heading4Xl} ${utilStyles.heightL}`}>Coming Soon!</p>
+        <p className={`${utilStyles.heading4Xl} ${utilStyles.heightL}`}>
+          Coming Soon!
+        </p>
       </section>
     </Layout>
   );

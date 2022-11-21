@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout from "../../components/Layout";
+import { Layout } from "../../components/Layout";
 import { client } from "../../lib/client";
 // import postStyles from "../../styles/Post.module.css";
 import utileStyles from "../../styles/Utils.module.css";
