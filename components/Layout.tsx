@@ -1,14 +1,20 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Link from "next/link";
 import styles from "../styles/Layout.module.css";
 import utilStyles from "../styles/Utils.module.css";
 import Image from "next/image";
-import Footer from "./Footer";
+import { Footer } from "./Footer";
 
-const name: = "Hiro Code";
+const name: string = "Hiro Code";
+
+type Props = {
+  children: ReactNode;
+  home?: boolean;
+};
+
 export const siteTitle = "Next.js Blog";
 
-function Layout({ children, home }) {
+export function Layout({ children, home }: Props) {
   return (
     <>
       <div className={styles.container}>
@@ -61,5 +67,3 @@ function Layout({ children, home }) {
     </>
   );
 }
-
-export default Layout;
