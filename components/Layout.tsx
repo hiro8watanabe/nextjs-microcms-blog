@@ -1,11 +1,11 @@
-// import Head from "next/head";
+import React from "react";
 import Link from "next/link";
 import styles from "../styles/Layout.module.css";
 import utilStyles from "../styles/Utils.module.css";
 import Image from "next/image";
 import Footer from "./Footer";
 
-const name = "Hiro Code";
+const name: = "Hiro Code";
 export const siteTitle = "Next.js Blog";
 
 function Layout({ children, home }) {
@@ -38,6 +38,7 @@ function Layout({ children, home }) {
             </>
           )}
         </header>
+
         <main>
           {children}
           {!home && (
