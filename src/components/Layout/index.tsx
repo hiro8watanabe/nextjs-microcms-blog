@@ -1,9 +1,9 @@
 import React, { ReactNode } from "react";
 import Link from "next/link";
-import styles from "../styles/Layout.module.css";
-import utilStyles from "../styles/Utils.module.css";
+import styles from "src/components/Layout/Layout.module.css";
+import utilStyles from "src/styles/Utils.module.css";
 import Image from "next/image";
-import { Footer } from "./Footer";
+import { Footer } from "src/components/Footer";
 
 const name: string = "Hiro Code";
 

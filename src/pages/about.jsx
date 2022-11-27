@@ -1,8 +1,8 @@
 import Head from "next/head";
 // import Image from "next/image";
-import about from "../styles/About.module.css";
-import {Layout,  siteTitle } from "../components/Layout";
-import utilStyles from "../styles/Utils.module.css"
+import about from "src/styles/About.module.css";
+import {Layout,  siteTitle } from "src/components/Layout";
+import utilStyles from "src/styles/Utils.module.css"
 // import Link from "next/link";
 // import { getPostsData } from "../lib/post";
 // import { client } from "../lib/client";

@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from "next/link";
-import styles from "../styles/Footer.module.css";
+import styles from "src/components/Footer/Footer.module.css";
 
 export function Footer() {
   return (

@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import { Layout, siteTitle } from "../components/Layout";
-import utilStyles from "../styles/Utils.module.css";
+import styles from "src/styles/Home.module.css";
+import { Layout, siteTitle } from "src/components/Layout";
+import utilStyles from "src/styles/Utils.module.css";
 import Link from "next/link";
-import { getPostsData } from "../lib/post";
-import { client } from "../lib/client";
-import { formatDate } from "../lib/util";
+import { getPostsData } from "lib/post";
+import { client } from "lib/client";
+import { formatDate } from "lib/util";
 
 //ssgの場合
 export const getStaticProps = async () => {
