@@ -42,11 +42,7 @@ img {
 }
 
 pre {
-  background-color: #4a4a4a;
   color: #fff;
-  padding: 4px;
-  border-radius: 10px;
-  border: 1px solid #8a8a8a;
 }
 
 pre {
@@ -56,5 +52,4 @@ pre {
 code {
   /* white-space: break-spaces; */
   white-space: inherit;
-  border-radius: 10px;
 }
