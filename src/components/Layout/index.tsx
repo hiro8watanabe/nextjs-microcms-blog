@@ -29,7 +29,7 @@ export function Layout({ children, home }: Props) {
                 alt=""
                 width={180}
                 height={180}
-                className={`${utilStyles.borderCircle} ${styles.headerHomeImage}`}
+                className={`${utilStyles.borderCircle} ${styles.headerHomeImage} ${styles.headerHomeImageMove}`}
               />
               <h1 className={utilStyles.heading2Xl}>{name}</h1>
             </>
@@ -40,7 +40,7 @@ export function Layout({ children, home }: Props) {
                 alt=""
                 width={140}
                 height={140}
-                className={`${utilStyles.borderCircle} ${styles.headerImage}`}
+                className={`${utilStyles.borderCircle} ${styles.headerImage} ${styles.headerHomeImageMove}`}
               />
               <h1 className={utilStyles.heading2Xl}>{name}</h1>
             </>
