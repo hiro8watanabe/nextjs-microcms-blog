@@ -7,8 +7,10 @@ body {
   line-height: 1.6;
   font-size: 18px;
   /* background-color: #fbf5f5; */
-  background-color: #242424;
-  color: #fff;
+  /* background-color: #242424; */
+  background-color: #f3f7ff;
+  /* color: #fff; */
+  color: #333;
   overflow-wrap: break-word;
 }
 
@@ -23,7 +25,8 @@ ul {
 }
 
 a {
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: #333;
   text-decoration: none;
   transition: opacity 0.3s;
 }
@@ -45,7 +48,7 @@ pre {
   border: 1px solid #8a8a8a;
 }
 
-pre{
+pre {
   overflow-x: scroll;
 }
 

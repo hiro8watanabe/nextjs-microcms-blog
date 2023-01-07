@@ -1,5 +1,6 @@
 .section {
-background-color: #000;
+  /* background-color: #000; */
+  background-color: #1c1c1c;
 }
 
 .inner {
@@ -28,11 +29,20 @@ background-color: #000;
   padding-top: 2rem;
 }
 
+.list > a {
+  color: #fff;
+}
+
 .list:not(:first-child) {
   margin-top: 0.7rem;
+}
+
+.logoWrap {
+  color: #fff;
 }
 
 .copy {
   margin-top: 3rem;
   text-align: center;
+  color: #fff;
 }

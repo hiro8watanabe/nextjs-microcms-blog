@@ -10,6 +10,8 @@ const name: string = "PENGIN CODE";
 type Props = {
   children: ReactNode;
   home?: boolean;
+  about?: boolean;
+  blogs?: boolean;
 };
 
 export const siteTitle = "Next.js Blog";

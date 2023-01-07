@@ -69,7 +69,8 @@
 }
 
 .boldText {
-  color: #fff;
+  /* color: #fff; */
+  color: #333;
   font-weight: 550;
 }
 
@@ -85,7 +86,9 @@
   top: -32vw;
   left: -24vw;
   border-radius: 50%;
-  background-color: #581818;
+  /* background-color: #581818; */
+  background-color: #004dff3b;
+  /* background: url(../../public/images/yukigassen.png) no-repeat center/contain; */
   position: absolute;
 }
 
