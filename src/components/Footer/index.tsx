@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 import Link from "next/link";
 import styles from "src/components/Footer/Footer.module.css";
 
 export function Footer() {
   return (
-    <div className={styles.section}>
+    <footer className={styles.section}>
       <div className={styles.inner}>
         <div className={styles.container}>
           <nav className={styles.nav}>
@@ -42,7 +42,7 @@ export function Footer() {
           <small lang="en">©Copyright 2022 PENGIN CODE</small>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 
