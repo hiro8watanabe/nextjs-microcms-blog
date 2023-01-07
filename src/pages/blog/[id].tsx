@@ -51,6 +51,8 @@ export default function BlogId({ blog, highlightedBody }) {
     <Layout>
       <Head>
         <title>{blog.title}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content={blog.description} />
       </Head>
       <div className={utileStyles.circle}></div>
       <article className={`${utileStyles.position} ${utileStyles.inner}`}>

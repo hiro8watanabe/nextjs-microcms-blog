@@ -33,6 +33,7 @@ export default function Home({ blog }) {
       <Head>
         <title>{siteTitle}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Topページです" />
       </Head>
       <section
         className={`${utilStyles.headingMd} ${utilStyles.smallContainer}`}
