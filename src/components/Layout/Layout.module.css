@@ -32,7 +32,7 @@
   -webkit-animation-name: move;
   animation-name: move;
   -webkit-animation-duration: 1s;
-  animation-duration: 2s;
+  animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   -webkit-animation-delay: 0s;
@@ -48,17 +48,17 @@
 @-webkit-keyframes move {
   0%,
   10% {
-    transform: rotate(-15deg);
+    transform: rotate(-5deg);
     transform-origin: bottom;
   }
   40%,
   60% {
-    transform: rotate(15deg);
+    transform: rotate(5deg);
     transform-origin: bottom;
   }
   90%,
   100% {
-    transform: rotate(-15deg);
+    transform: rotate(-5deg);
     transform-origin: bottom;
   }
 }
@@ -66,17 +66,17 @@
 @keyframes move {
   0%,
   10% {
-    transform: rotate(-15deg);
+    transform: rotate(-5deg);
     transform-origin: bottom;
   }
   40%,
   60% {
-    transform: rotate(15deg);
+    transform: rotate(5deg);
     transform-origin: bottom;
   }
   90%,
   100% {
-    transform: rotate(-15deg);
+    transform: rotate(-5deg);
     transform-origin: bottom;
   }
 }
