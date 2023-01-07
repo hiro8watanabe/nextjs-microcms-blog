@@ -1,8 +1,8 @@
 import Head from "next/head";
 // import Image from "next/image";
 import about from "src/styles/About.module.css";
-import {Layout,  siteTitle } from "src/components/Layout";
-import utilStyles from "src/styles/Utils.module.css"
+import { Layout, siteTitle } from "src/components/Layout";
+import utilStyles from "src/styles/Utils.module.css";
 // import Link from "next/link";
 // import { getPostsData } from "../lib/post";
 // import { client } from "../lib/client";
@@ -18,7 +18,6 @@ import utilStyles from "src/styles/Utils.module.css"
 //     },
 //   };
 // };
-
 
 export default function About() {
   return (
@@ -43,13 +42,19 @@ export default function About() {
         <div className={about.textLayout}>
           <h3>自己紹介</h3>
           <p>
-            フリーランスで制作会社にjoinさせてもらっているPENGINといいます。</p>
-            <p>3年ほど前にコーダーとして活動開始。営業から顧客折衝、デザイン、コーディングなど、個人で全行程を行ってきました。
-            最近は複数人での開発をしてみたいという想いから、制作会社さんのお仕事をメインに活動中。</p>
-            <p>主にWordPress、PHP、JavaScript、mocの修正やディレクション業務を担当しています。
+            フリーランスで制作会社にjoinさせてもらっているPENGINといいます。
+          </p>
+          <p>
+            3年ほど前にコーダーとして活動開始。営業から顧客折衝、デザイン、コーディングなど、個人で全行程を行ってきました。
+            最近は複数人での開発をしてみたいという想いから、制作会社さんのお仕事をメインに活動中。
+            主にWordPress、PHP、JavaScript、mocの修正やディレクション業務を担当しています。
             HeadlessCMSやJamstackといった領域に興味があり、業務終了後や休日を利用しNext.jsやReactの学習を進めています。
           </p>
-          <p>趣味は釣り。南米アマゾンやインドの辺境地で釣りしたりしています。好きな魚はアジです。</p>
+          <p>
+            趣味は釣り。南米アマゾンやインドの辺境地で釣りしたりしています。好きな魚はアジです。
+            <br />
+            びっくりしたことは寝て起きたらワニが居たことです。よろしくお願いします。
+          </p>
         </div>
       </section>
     </Layout>
