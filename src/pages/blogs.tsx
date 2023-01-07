@@ -47,7 +47,7 @@ export default function Blog({ blog }) {
       <section
         className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.position}`}
       >
-        <h2>制作ブログ一覧</h2>
+        <h2>ブログ一覧</h2>
         <div className={styles.grid}>
           {blog.map((blog) => (
             <article key={blog.id}>
