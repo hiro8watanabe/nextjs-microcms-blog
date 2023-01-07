@@ -32,14 +32,14 @@ export function Footer() {
             </ul>
           </nav>
           <div className={styles.logoWrap}>
-            <h1 className={styles.title}>Hiro Code</h1>
+            <h1 className={styles.title}>PENGIN CODE</h1>
             <p>
               業界3年。フロントエンドエンジニアになりたいコーダーの学習記録。お仕事依頼はお問い合わせよりお願いします。
             </p>
           </div>
         </div>
         <div className={styles.copy}>
-          <small>©Copyright 2022 Hiro Code</small>
+          <small lang="en">©Copyright 2022 PENGIN CODE</small>
         </div>
       </div>
     </div>

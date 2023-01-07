@@ -5,7 +5,7 @@ import utilStyles from "src/styles/Utils.module.css";
 import Image from "next/image";
 import { Footer } from "src/components/Footer";
 
-const name: string = "Hiro Code";
+const name: string = "PENGIN CODE";
 
 type Props = {
   children: ReactNode;
@@ -23,7 +23,7 @@ export function Layout({ children, home }: Props) {
           {home ? (
             <>
               <Image
-                src="/images/sns_icon_min.jpg"
+                src="/images/pengin.png"
                 alt=""
                 width={180}
                 height={180}
@@ -34,7 +34,7 @@ export function Layout({ children, home }: Props) {
           ) : (
             <>
               <Image
-                src="/images/sns_icon_min.jpg"
+                src="/images/pengin.png"
                 alt=""
                 width={140}
                 height={140}

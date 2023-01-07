@@ -42,11 +42,11 @@ export default function About() {
         <div className={about.textLayout}>
           <h3>自己紹介</h3>
           <p>
-            フリーランスで制作会社にjoinさせてもらっているHIROといいます。
+            フリーランスで制作会社にjoinさせてもらっているPENGINといいます。
             3年ほど前にコーダーとして活動開始。営業から顧客折衝、デザイン、コーディングなど、個人で全行程を行ってきました。
             最近は複数人での開発をしてみたいという想いから、制作会社さんのお仕事をメインに活動中。
             主にWordPress、PHP、JavaScript、mocの修正やディレクション業務を担当しています。
-            個人的にはHeadlessCMSやJamstackといった領域に興味があり、業務終了後や休日を利用しNext.jsやReactの学習を進めています。
+            HeadlessCMSやJamstackといった領域に興味があり、業務終了後や休日を利用しNext.jsやReactの学習を進めています。
           </p>
         </div>
       </section>
