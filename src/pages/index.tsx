@@ -11,7 +11,6 @@ import { formatDate } from "lib/util";
 //ssgの場合
 export const getStaticProps = async () => {
   const data = await client.get({ endpoint: "blog" });
-
   return {
     props: {
       blog: data.contents,
