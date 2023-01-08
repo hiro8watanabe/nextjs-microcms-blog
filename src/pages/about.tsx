@@ -23,7 +23,7 @@ export default function About() {
   return (
     <Layout about>
       <Head>
-        <title>{siteTitle}</title>
+        <title>About / PENGIN CODE</title>
         <meta
           name="viewport"
           content="initial-scale=1.0, width=device-width, viewport-fit=cover"

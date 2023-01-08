@@ -23,7 +23,7 @@ export default function Contact() {
   return (
     <Layout>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Contact / PENGIN CODE</title>
         <meta
           name="viewport"
           content="initial-scale=1.0, width=device-width, viewport-fit=cover"

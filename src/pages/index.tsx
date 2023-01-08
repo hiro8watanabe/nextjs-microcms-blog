@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "src/styles/Home.module.css";
-import { Layout, siteTitle } from "src/components/Layout";
+import { Layout } from "src/components/Layout";
+// import { Layout, siteTitle } from "src/components/Layout";
 import utilStyles from "src/styles/Utils.module.css";
 import Link from "next/link";
 // import { getPostsData } from "lib/post";
@@ -28,10 +29,12 @@ export const getStaticProps = async () => {
 // }
 
 export default function Home({ blog }) {
+
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>PENGIN CODE</title>
+        {/* <title>{siteTitle}</title> */}
         <meta
           name="viewport"
           content="initial-scale=1.0, width=device-width, viewport-fit=cover"

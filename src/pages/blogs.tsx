@@ -32,7 +32,7 @@ export default function Blog({ blog }) {
   return (
     <Layout blogs>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Blog / PENGIN CODE</title>
         <meta
           name="viewport"
           content="initial-scale=1.0, width=device-width ,viewport-fit=cover"

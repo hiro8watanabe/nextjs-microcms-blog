@@ -14,7 +14,7 @@ type Props = {
   blogs?: boolean;
 };
 
-export const siteTitle = "Next.js Blog";
+// export const siteTitle = "Next.js Blog";
 
 export function Layout({ children, home }: Props) {
   return (
