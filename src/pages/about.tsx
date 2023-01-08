@@ -1,7 +1,7 @@
 import Head from "next/head";
 // import Image from "next/image";
 import about from "src/styles/About.module.css";
-import { Layout, siteTitle } from "src/components/Layout";
+import { Layout } from "src/components/Layout";
 import utilStyles from "src/styles/Utils.module.css";
 // import Link from "next/link";
 // import { getPostsData } from "../lib/post";
