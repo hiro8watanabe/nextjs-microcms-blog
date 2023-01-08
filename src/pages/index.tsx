@@ -29,7 +29,6 @@ export const getStaticProps = async () => {
 // }
 
 export default function Home({ blog }) {
-
   return (
     <Layout home>
       <Head>
@@ -67,7 +66,7 @@ export default function Home({ blog }) {
                     width={640}
                     height={426}
                     objectFit="cover"
-                    alt=""
+                    alt={blog.title}
                   />
 
                   {blog.title}
