@@ -34,7 +34,7 @@ export function Footer() {
           <div className={styles.logoWrap}>
             <h1 className={styles.title}>PENGIN CODE</h1>
             <p>
-              業界3年。自身を持ってフロントエンドエンジニアと名乗りたいコーダーの学習記録。
+              業界3年に突入。自身を持ってフロントエンドエンジニアと名乗りたいコーダーの学習記録。
             </p>
           </div>
         </div>
