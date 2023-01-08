@@ -24,7 +24,10 @@ export default function About() {
     <Layout about>
       <Head>
         <title>{siteTitle}</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="viewport"
+          content="initial-scale=1.0, width=device-width, viewport-fit=cover"
+        />
         <meta name="description" content="Aboutページです" />
       </Head>
       <section

@@ -32,7 +32,10 @@ export default function Home({ blog }) {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="viewport"
+          content="initial-scale=1.0, width=device-width, viewport-fit=cover"
+        />
         <meta name="description" content="Topページです" />
       </Head>
       <section

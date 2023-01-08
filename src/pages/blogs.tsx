@@ -33,7 +33,10 @@ export default function Blog({ blog }) {
     <Layout blogs>
       <Head>
         <title>{siteTitle}</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="viewport"
+          content="initial-scale=1.0, width=device-width ,viewport-fit=cover"
+        />
         <meta name="description" content="Blogページです" />
       </Head>
       <section
