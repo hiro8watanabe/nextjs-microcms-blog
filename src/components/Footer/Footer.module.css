@@ -1,6 +1,6 @@
 .section {
   /* background-color: #000; */
-  background-color: #1c1c1c;
+  background-color: #aaa;
 }
 
 .inner {
@@ -30,7 +30,7 @@
 }
 
 .list > a {
-  color: #fff;
+  color: #333;
 }
 
 .list:not(:first-child) {
@@ -38,11 +38,11 @@
 }
 
 .logoWrap {
-  color: #fff;
+  color: #333;
 }
 
 .copy {
   margin-top: 3rem;
   text-align: center;
-  color: #fff;
+  color: #333;
 }
