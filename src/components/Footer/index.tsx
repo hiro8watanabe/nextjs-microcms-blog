@@ -25,11 +25,6 @@ export function Footer() {
                 </Link>
               </li>
               <li className={styles.list}>
-                <Link href="/category">
-                  <a>CATEGORY</a>
-                </Link>
-              </li>
-              <li className={styles.list}>
                 <Link href="/contact">
                   <a>CONTACT</a>
                 </Link>
