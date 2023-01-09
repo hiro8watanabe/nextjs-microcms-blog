@@ -63,8 +63,10 @@ export default function Home({ blog }) {
                   <Image
                     src={blog.thumbnail.url}
                     className={styles.thumbnailImage}
-                    width={640}
-                    height={426}
+                    width={950}
+                    height={534}
+                    // width={640}
+                    // height={426}
                     objectFit="cover"
                     alt={blog.title}
                   />
