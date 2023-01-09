@@ -37,7 +37,7 @@ export default function Blog({ blog }) {
           name="viewport"
           content="initial-scale=1.0, width=device-width ,viewport-fit=cover"
         />
-        <meta name="description" content="Blogページです" />
+        <meta name="description" content="ブログアーカイブページです" />
       </Head>
       <section
         className={`${utilStyles.headingMd} ${utilStyles.smallContainer}`}
