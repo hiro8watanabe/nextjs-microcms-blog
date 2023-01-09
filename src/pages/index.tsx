@@ -42,6 +42,10 @@ export default function Home({ blog }) {
           name="description"
           content="Topページ | 業界3年目のコーダーがフロントエンドの学習のため、Next.jsのSGとMicroCMSを使って構築したJamstackブログ。"
         />
+        <link
+          rel="canonical"
+          href="https://nextjs-microcms-blog-olive.vercel.app/"
+        />
       </Head>
       <section
         className={`${utilStyles.headingMd} ${utilStyles.smallContainer}`}

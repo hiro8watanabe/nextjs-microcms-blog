@@ -38,6 +38,10 @@ export default function Blog({ blog }) {
           content="initial-scale=1.0, width=device-width ,viewport-fit=cover"
         />
         <meta name="description" content="ブログアーカイブページです" />
+        <link
+          rel="canonical"
+          href="https://nextjs-microcms-blog-olive.vercel.app/blogs"
+        />
       </Head>
       <section
         className={`${utilStyles.headingMd} ${utilStyles.smallContainer}`}
