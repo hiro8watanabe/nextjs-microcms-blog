@@ -38,13 +38,16 @@ export default function Home({ blog }) {
           name="viewport"
           content="initial-scale=1.0, width=device-width, viewport-fit=cover"
         />
-        <meta name="description" content="Topページです" />
+        <meta
+          name="description"
+          content="Topページ | 業界3年目のコーダーがフロントエンドの学習のため、Next.jsのSGとMicroCMSを使って構築したJamstackブログ。"
+        />
       </Head>
       <section
         className={`${utilStyles.headingMd} ${utilStyles.smallContainer}`}
       >
         <p className={utilStyles.position}>
-          業界3年目のコーダーがフロントエンドの学習のため、Next.jsのSSGとMicroCMSを使って構築したJamstackブログです。
+          業界3年目のコーダーがフロントエンドの学習のため、Next.jsのSGとMicroCMSを使って構築したJamstackブログです。
         </p>
       </section>
 
