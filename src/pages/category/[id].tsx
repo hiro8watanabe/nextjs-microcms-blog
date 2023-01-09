@@ -24,7 +24,7 @@ export const getStaticProps = async (context) => {
   };
 };
 
-// 静的生成のためのパスを指定します
+// 静的生成のためのパスを指定
 export const getStaticPaths = async () => {
   const data = await client.get({ endpoint: "categories" });
   const paths = data.contents.map((content) => `/category/${content.id}`);
@@ -47,7 +47,7 @@ export default function CategoryId({ blog }) {
   // カテゴリーに紐付いたコンテンツがない場合に表示
   if (blog.length === 0) {
     return (
-      <Layout>
+      <Layout category>
         <Head>
           <meta
             name="viewport"
@@ -74,7 +74,7 @@ export default function CategoryId({ blog }) {
 
   // カテゴリーに紐付いたコンテンツがある場合に表示
   return (
-    <Layout>
+    <Layout category>
       <Head>
         <title key={blog.id}>
           {`${blog[0].category.name}記事一覧ページ`} | PENGIN CODE

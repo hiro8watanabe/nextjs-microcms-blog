@@ -12,11 +12,12 @@ type Props = {
   home?: boolean;
   about?: boolean;
   blogs?: boolean;
+  category?: boolean;
 };
 
 // export const siteTitle = "Next.js Blog";
 
-export function Layout({ children, home, blogs }: Props) {
+export function Layout({ children, home, blogs, category }: Props) {
   return (
     <>
       <div className={styles.container}>
@@ -52,7 +53,11 @@ export function Layout({ children, home, blogs }: Props) {
           {!home && (
             <div
               className={`${utilStyles.position} ${
-                blogs ? `${utilStyles.innerBlogs}` : `${utilStyles.inner}`
+                blogs
+                  ? `${utilStyles.wideBackBtnInner}`
+                  : category
+                  ? `${utilStyles.wideBackBtnInner}`
+                  : `${utilStyles.inner}`
               }`}
             >
               <Link href="/">
