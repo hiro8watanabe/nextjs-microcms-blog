@@ -76,9 +76,7 @@ export default function CategoryId({ blog }) {
   return (
     <Layout category>
       <Head>
-        <title key={blog.id}>
-          {`${blog[0].category.name}記事一覧ページ`} | PENGIN CODE
-        </title>
+        <title>{`${blog[0].category.name}記事一覧ページ | PENGIN CODE`}</title>
         <meta
           name="viewport"
           content="initial-scale=1.0, width=device-width, viewport-fit=cover"
