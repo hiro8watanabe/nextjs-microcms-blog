@@ -60,26 +60,26 @@ export default function Blog({ blog }) {
           {blog.map((blog) => (
             <article key={blog.id}>
               <Link href={`/blog/${blog.id}`}>
-                <Image
-                  src={blog.thumbnail.url}
-                  className={styles.thumbnailImage}
-                  width={950}
-                  height={534}
-                  objectFit="cover"
-                  alt={blog.title}
-                />
-              </Link>
-              <Link href={`/blog/${blog.id}`}>
                 <a
                   className={`${utilStyles.boldText} ${utilStyles.inlineBlock}`}
                 >
+                  <Image
+                    src={blog.thumbnail.url}
+                    className={styles.thumbnailImage}
+                    width={950}
+                    height={534}
+                    priority={true}
+                    objectFit="cover"
+                    alt={blog.title}
+                  />
+
                   {blog.title}
+                  <br />
+                  <small className={utilStyles.lightText}>
+                    {formatDate(blog.publishedAt)}
+                  </small>
                 </a>
               </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                {formatDate(blog.publishedAt)}
-              </small>
             </article>
           ))}
         </div>
