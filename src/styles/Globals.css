@@ -1,4 +1,3 @@
-
 body {
   padding: 0;
   margin: 0;
@@ -43,9 +42,6 @@ img {
 
 pre {
   color: #fff;
-}
-
-pre {
   overflow-x: scroll;
 }
 
