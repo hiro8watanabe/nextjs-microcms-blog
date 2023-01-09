@@ -98,7 +98,7 @@
 }
 
 .inner {
-  max-width: 980px;
+  max-width: 950px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 80px;
@@ -109,4 +109,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cat {
+  background-color: #545454;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #e1e1e1e1;
 }
