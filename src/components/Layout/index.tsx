@@ -16,7 +16,7 @@ type Props = {
 
 // export const siteTitle = "Next.js Blog";
 
-export function Layout({ children, home }: Props) {
+export function Layout({ children, home, blogs }: Props) {
   return (
     <>
       <div className={styles.container}>
@@ -50,7 +50,11 @@ export function Layout({ children, home }: Props) {
         <main>
           {children}
           {!home && (
-            <div className={`${utilStyles.position} ${utilStyles.inner}`}>
+            <div
+              className={`${utilStyles.position} ${
+                blogs ? `${utilStyles.innerBlogs}` : `${utilStyles.inner}`
+              }`}
+            >
               <Link href="/">
                 <a>◀ ホームへ戻る</a>
               </Link>
