@@ -5,6 +5,7 @@ const Document = () => {
   return (
     <Html lang="ja">
       <Head>
+        <meta name="robots" content="index, follow" />
         <meta name="format-detection" content="telephone=no" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
