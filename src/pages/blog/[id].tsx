@@ -8,6 +8,7 @@ import { load } from "cheerio"; // cheerioの直接参照は非推奨だった�
 import hljs from "highlight.js";
 import "highlight.js/styles/vs2015.css";
 import Link from "next/link";
+import Image from "next/image";
 
 //SSG
 export const getStaticProps = async (context) => {
@@ -69,6 +70,15 @@ export default function BlogId({ blog, highlightedBody }) {
             </a>
           </Link>
         ) : undefined}
+
+        <Image
+          src={blog.thumbnail.url}
+          width={950}
+          height={534}
+          objectFit="cover"
+          alt={blog.title}
+        />
+
         <div dangerouslySetInnerHTML={{ __html: highlightedBody }} />
       </article>
     </Layout>
