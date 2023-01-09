@@ -2,10 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "src/styles/Home.module.css";
 import { Layout } from "src/components/Layout";
-// import { Layout, siteTitle } from "src/components/Layout";
 import utilStyles from "src/styles/Utils.module.css";
 import Link from "next/link";
-// import { getPostsData } from "lib/post";
 import { client } from "lib/client";
 import { formatDate } from "lib/util";
 
@@ -72,8 +70,7 @@ export default function Home({ blog }) {
                     className={styles.thumbnailImage}
                     width={950}
                     height={534}
-                    // width={640}
-                    // height={426}
+                    priority={true}
                     objectFit="cover"
                     alt={blog.title}
                   />
