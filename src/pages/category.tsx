@@ -12,11 +12,11 @@ import { formatDate } from "lib/util";
 export const getStaticProps = async () => {
   const data = await client.get({ endpoint: "blog" });
   // カテゴリーコンテンツの取得
-  const categoryData = await client.get({ endpoint: "categories" });
+  // const categoryData = await client.get({ endpoint: "categories" });
   return {
     props: {
       blog: data.contents,
-      category: categoryData.contents,
+      // category: categoryData.contents,
     },
   };
 };
@@ -56,13 +56,14 @@ export default function Blog({ blog, category }) {
       >
         <h2>カテゴリーアーカイブ</h2>
 
-        <ul>
+        {/* <ul>
           {category.map((category) => (
             <li key={category.id}>
               <Link href={`/category/${category.id}`}>{category.name}</Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
+
         <div className={styles.grid}>
           {blog.map((blog) => (
             <article key={blog.id}>
