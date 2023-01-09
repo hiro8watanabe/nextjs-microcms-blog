@@ -1,4 +1,4 @@
-// import '../styles/reset.css'
+// import 'src/styles/Reset.css'
 import 'src/styles/Globals.css'
 
 function MyApp({ Component, pageProps }) {
