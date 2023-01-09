@@ -7,6 +7,7 @@ import { formatDate } from "lib/util";
 import { load } from "cheerio"; // cheerioの直接参照は非推奨だったため、loadをimport
 import hljs from "highlight.js";
 import "highlight.js/styles/vs2015.css";
+import Link from "next/link";
 
 //SSG
 export const getStaticProps = async (context) => {
@@ -58,6 +59,13 @@ export default function BlogId({ blog, highlightedBody }) {
       <article className={`${utileStyles.position} ${utileStyles.inner}`}>
         <h1 className={utileStyles.headingXl}>{blog.title}</h1>
         <p className={utileStyles.lightText}>{formatDate(blog.publishedAt)}</p>
+        {blog.category ? (
+          <Link href={`/category/${blog.category.id}`}>
+            <a className={utileStyles.cat}>
+              {blog.category && blog.category.name}
+            </a>
+          </Link>
+        ) : undefined}
         <div dangerouslySetInnerHTML={{ __html: highlightedBody }} />
       </article>
     </Layout>
