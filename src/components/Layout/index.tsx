@@ -32,7 +32,7 @@ export function Layout({ children, home, blogs, category }: Props) {
                 height={180}
                 className={`${utilStyles.borderCircle} ${styles.headerHomeImage} ${styles.headerHomeImageMove}`}
               />
-              <h1 className={utilStyles.heading2Xl}>{name}</h1>
+              
             </>
           ) : (
             <>
