@@ -11,18 +11,6 @@
   justify-content: space-between;
   align-items: center;
 }
-/* 
-.container {
-  display: flex;
-  justify-content: space-between;
-} */
-
-@media screen and (min-width: 636px) {
-  .container {
-    display: flex;
-    justify-content: space-between;
-  }
-}
 
 .logoWrapper {
   display: flex;
@@ -54,4 +42,14 @@
 
 .logoWrap {
   color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .heading2Xl {
+    font-size: 2rem;
+  }
 }

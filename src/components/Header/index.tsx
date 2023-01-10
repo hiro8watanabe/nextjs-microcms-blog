@@ -19,7 +19,7 @@ export function Header() {
           />
           <h1 className={headerStyles.heading2Xl}>{h1Title}</h1>
         </div>
-        <nav>
+        <nav className={headerStyles.nav}>
           <ul className={headerStyles.lists}>
             <li className={headerStyles.list}>
               <Link href="/">
