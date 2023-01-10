@@ -24,7 +24,7 @@ export function Layout({ children, home, blogs, category }: Props) {
       <Header />
       <div className={styles.container}>
         {/* <Head><Link rel="icon" href="/favicon.ico" /></Head> */}
-        <header className={styles.header}>
+        <div className={styles.header}>
           {home ? (
             <>
               <Image
@@ -48,7 +48,7 @@ export function Layout({ children, home, blogs, category }: Props) {
               {/* <h1 className={utilStyles.heading2Xl}>{name}</h1> */}
             </>
           )}
-        </header>
+        </div>
 
         <main>
           {children}
