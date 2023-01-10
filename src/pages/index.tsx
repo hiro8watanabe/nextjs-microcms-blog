@@ -30,7 +30,7 @@ export default function Home({ blog }) {
   return (
     <Layout home>
       <Head>
-        <title>PENGIN CODE</title>
+        <title>PENGIN CODE | Next.jsとMicroCMSを使用したJamstackブログ</title>
         {/* <title>{siteTitle}</title> */}
         <meta
           name="viewport"
