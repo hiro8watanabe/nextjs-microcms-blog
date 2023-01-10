@@ -38,7 +38,7 @@ export default function Home({ blog }) {
         />
         <meta
           name="description"
-          content="Topページ | 業界3年目のコーダーがフロントエンドの学習のため、Next.jsのSGとMicroCMSを使って構築したJamstackブログ。"
+          content="業界4年目のコーダーがフロントエンドの学習のため、Next.jsのSGとMicroCMSを使って構築したJamstackブログ"
         />
         <link
           rel="canonical"
