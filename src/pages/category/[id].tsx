@@ -91,7 +91,7 @@ export default function CategoryId({ blog }) {
         className={`${utilStyles.headingMd} ${utilStyles.smallContainer}`}
       >
         <p className={utilStyles.position}>
-          業界3年目のコーダーがフロントエンドの学習のため、Next.jsのSSGとMicroCMSを使って構築したJamstackブログです。
+          業界4年目のコーダーがフロントエンドの学習のため、Next.jsのSGとMicroCMSを使って構築したJamstackブログ。仕事の合間にのんびり機能追加しながら、遭遇したエラーなどの対処法をひっそりと書いています。
         </p>
       </section>
 
