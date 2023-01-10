@@ -1,0 +1,57 @@
+.header {
+  position: relative;
+  z-index: 50;
+}
+
+.inner {
+  padding: 1rem;
+  max-width: 1244px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 
+.container {
+  display: flex;
+  justify-content: space-between;
+} */
+
+@media screen and (min-width: 636px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.heading2Xl {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin-top: 0;
+  margin-left: 12px;
+  margin-bottom: 0;
+}
+
+.lists {
+  font-weight: bold;
+  display: flex;
+}
+
+.list > a {
+  color: #333;
+}
+
+.list:not(:first-child) {
+  margin-left: 1.7rem;
+}
+
+.logoWrap {
+  color: #333;
+}
