@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import styles from "src/components/Footer/Footer.module.css";
+import { Logo } from "src/components/Logo";
 
 export function Footer() {
   return (
@@ -32,7 +33,7 @@ export function Footer() {
             </ul>
           </nav>
           <div className={styles.logoWrap}>
-            <h1 className={styles.title}>PENGIN CODE</h1>
+            <Logo />
             <p>
               業界3年に突入。そろそろフロントエンドエンジニアと名乗りたいコーダーの学習記録。
             </p>

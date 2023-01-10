@@ -22,7 +22,8 @@
 }
 
 .logoWrap {
-  max-width: 320px;
+  max-width: 330px;
+  padding-top: 2rem;
 }
 
 .lists {
@@ -36,10 +37,6 @@
 
 .list:not(:first-child) {
   margin-top: 0.7rem;
-}
-
-.logoWrap {
-  color: #333;
 }
 
 .copy {
