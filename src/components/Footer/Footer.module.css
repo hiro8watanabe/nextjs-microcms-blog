@@ -27,6 +27,7 @@
 
 .lists {
   padding-top: 2rem;
+  font-weight: bold;
 }
 
 .list > a {
