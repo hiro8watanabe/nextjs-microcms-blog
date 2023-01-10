@@ -4,8 +4,9 @@ import styles from "src/components/Layout/Layout.module.css";
 import utilStyles from "src/styles/Utils.module.css";
 import Image from "next/image";
 import { Footer } from "src/components/Footer";
+import { Header } from "src/components/Header";
 
-const name: string = "PENGIN CODE";
+// const name: string = "PENGIN CODE";
 
 type Props = {
   children: ReactNode;
@@ -20,6 +21,7 @@ type Props = {
 export function Layout({ children, home, blogs, category }: Props) {
   return (
     <>
+      <Header />
       <div className={styles.container}>
         {/* <Head><Link rel="icon" href="/favicon.ico" /></Head> */}
         <header className={styles.header}>
@@ -43,7 +45,7 @@ export function Layout({ children, home, blogs, category }: Props) {
                 height={140}
                 className={`${utilStyles.borderCircle} ${styles.headerImage} ${styles.headerHomeImageMove}`}
               />
-              <h1 className={utilStyles.heading2Xl}>{name}</h1>
+              {/* <h1 className={utilStyles.heading2Xl}>{name}</h1> */}
             </>
           )}
         </header>
