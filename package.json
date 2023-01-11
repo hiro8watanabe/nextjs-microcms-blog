@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@types/jest": "^29.2.5",
+    "@types/nodemailer": "^6.4.7",
     "@types/react-dom": "^18.0.10",
     "cheerio": "^1.0.0-rc.12",
     "dayjs": "^1.11.5",
