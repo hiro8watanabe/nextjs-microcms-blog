@@ -35,7 +35,7 @@ export function Footer() {
           <div className={styles.logoWrap}>
             <Logo />
             <p>
-              業界3年に突入。そろそろフロントエンドエンジニアと名乗りたいコーダーの学習記録。
+              業界4年に突入。そろそろフロントエンドエンジニアと名乗りたいコーダーの学習記録。
             </p>
           </div>
         </div>
