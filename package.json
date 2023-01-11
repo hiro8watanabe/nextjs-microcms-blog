@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@types/jest": "^29.2.5",
+    "@types/nodemailer": "^6.4.7",
     "@types/react-dom": "^18.0.10",
     "cheerio": "^1.0.0-rc.12",
     "dayjs": "^1.11.5",
@@ -17,6 +18,7 @@
     "highlight.js": "^11.7.0",
     "microcms-js-sdk": "^2.2.1",
     "next": "12.3.1",
+    "nodemailer": "^6.8.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "remark": "^14.0.2",
