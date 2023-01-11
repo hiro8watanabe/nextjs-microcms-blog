@@ -4,6 +4,7 @@ import styles from "src/styles/Home.module.css";
 import { Layout } from "src/components/Layout";
 import utilStyles from "src/styles/Utils.module.css";
 import Link from "next/link";
+import { Form } from "src/components/Form/Form";
 // import { getPostsData } from "../lib/post";
 // import { client } from "../lib/client";
 // import { formatDate } from "../lib/util";
@@ -47,9 +48,11 @@ export default function Contact() {
           制作・相談などの各種お問い合わせはこちらから。
         </p>
 
-        <p className={`${utilStyles.heading4Xl} ${utilStyles.heightL}`}>
+        <Form />
+
+        {/* <p className={`${utilStyles.heading4Xl} ${utilStyles.heightL}`}>
           Coming Soon!
-        </p>
+        </p> */}
       </section>
     </Layout>
   );

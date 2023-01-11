@@ -1,0 +1,74 @@
+.inputWrap {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.label {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.label::after {
+  content: "必須";
+  background-color: #cf0000;
+  padding: 4px 8px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-left: 8px;
+}
+
+.fontBold {
+  font-weight: bold;
+  color: #333;
+}
+
+.feedbackInput {
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #777;
+  transition: all 0.3s;
+  padding: 13px;
+  width: 100%;
+  outline: 0;
+}
+
+.feedbackInput:focus {
+  border: 2px solid #333;
+}
+
+.feedbackTextArea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form {
+  max-width: 780px;
+  margin: 50px auto;
+}
+/* .textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+} */
+
+.submitBtn {
+  width: 100%;
+  background: #999;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+.submitBtn:hover {
+  background: #3a82ff;
+}

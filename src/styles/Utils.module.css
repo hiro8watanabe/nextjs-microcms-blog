@@ -84,10 +84,10 @@
   width: 74vw;
   height: 74vw;
   top: -32vw;
-  right: -24vw;
+  left: -24vw;
   border-radius: 50%;
   /* background-color: #581818; */
-  background-color: #aaa;
+  background-color: rgb(201 200 200 / 80%);
   /* background: url(../../public/images/yukigassen.png) no-repeat center/contain; */
   position: absolute;
 }
