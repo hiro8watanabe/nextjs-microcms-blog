@@ -17,7 +17,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   await transporter.sendMail({
     from: process.env.NEXT_PUBLIC_MAIL_USER,
     to: data.mail,
-    subject: "以下の内容でお問い合わせを受け付けました",
+    subject: "以下の内容でお問い合わせを受け付けました!",
     text: `
     名前
     ${data.name}
