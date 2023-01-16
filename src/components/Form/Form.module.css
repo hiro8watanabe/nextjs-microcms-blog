@@ -55,12 +55,17 @@
   resize: vertical;
 } */
 
-.submitBtn {
+.error{
+  color: #cf0000;
+  font-weight: bold;
+}
+
+.submitBtnDisabled {
   width: 100%;
   background: #999;
   border-radius: 5px;
   border: 0;
-  cursor: pointer;
+  pointer-events: none;
   color: white;
   font-size: 24px;
   padding-top: 10px;
@@ -69,6 +74,12 @@
   margin-top: -4px;
   font-weight: 700;
 }
-.submitBtn:hover {
+
+.submitBtnActive {
   background: #3a82ff;
+  pointer-events: auto;
+  cursor: pointer;
+}
+.submitBtnActive:hover {
+  background: #3a82ffbb;
 }
