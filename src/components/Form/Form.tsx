@@ -18,7 +18,7 @@ export const Form: NextPage = () => {
   const [messageFlag, setMessageFlag] = useState<boolean>(true);
 
   const handleSubmit = (e: React.FormEvent<HTMLInputElement>) => {
-    // e.preventDefault();
+    e.preventDefault();
 
     const name = form.name;
     const mail = form.mail;

@@ -15,6 +15,8 @@ export const Logo = () => {
             alt="PENGIN CODE LOGO"
             width={52}
             height={52}
+            placeholder="blur"
+            blurDataURL={"/images/pengin-icon.png"}
             className={`${headerStyles.logo} `}
           />
           <h1 className={headerStyles.heading2Xl}>{h1Title}</h1>

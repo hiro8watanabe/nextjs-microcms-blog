@@ -70,6 +70,8 @@ export default function Blog({ blog }) {
                     height={534}
                     priority={true}
                     objectFit="cover"
+                    placeholder="blur"
+                    blurDataURL={blog.thumbnail.url}
                     alt={blog.title}
                   />
 
