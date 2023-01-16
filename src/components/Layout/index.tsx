@@ -32,6 +32,7 @@ export function Layout({ children, home, blogs, category }: Props) {
                 alt=""
                 width={180}
                 height={180}
+                priority={true}
                 className={`${utilStyles.borderCircle} ${styles.headerHomeImage} ${styles.headerHomeImageMove}`}
               />
               
@@ -43,6 +44,7 @@ export function Layout({ children, home, blogs, category }: Props) {
                 alt=""
                 width={140}
                 height={140}
+                priority={true}
                 className={`${utilStyles.borderCircle} ${styles.headerImage} ${styles.headerHomeImageMove}`}
               />
               {/* <h1 className={utilStyles.heading2Xl}>{name}</h1> */}
