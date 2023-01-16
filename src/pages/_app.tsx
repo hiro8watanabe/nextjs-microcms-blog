@@ -1,8 +1,13 @@
 // import 'src/styles/Reset.css'
-import 'src/styles/Globals.css'
+import React from "react";
+import "src/styles/Globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <React.StrictMode>
+      <Component {...pageProps} />
+    </React.StrictMode>
+  );
 }
 
-export default MyApp
+export default MyApp;
