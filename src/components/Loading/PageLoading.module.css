@@ -1,0 +1,228 @@
+.mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap {
+  transform-style: preserve-3d;
+  perspective: 300px;
+}
+
+.container {
+  transform: rotate3d(1, 0.5, 0.8, 60deg);
+}
+
+.circleText {
+  position: relative;
+  width: 320px; /* 直径 */
+  height: 320px; /* 直径 */
+  font-size: 28px;
+  text-align: center;
+  margin: 0;
+  transform: rotate(-80deg); /* 円の回転 */
+  animation: 20s linear infinite rotation;
+}
+
+.circleText span {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 10px); /* 中心点、、文字サイズ分ずらす */
+  display: inline-block;
+  width: 28px; /* 文字サイズより小さくしない */
+  height: 160px; /* 半径 */
+  transform-origin: center bottom; /* 回転の基準点 */
+  /*  border: solid 1px; */
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.circleText span:nth-child(1) {
+  transform: rotate(0deg);
+}
+
+.circleText span:nth-child(2) {
+  transform: rotate(8.78deg);
+}
+
+.circleText span:nth-child(3) {
+  transform: rotate(17.56deg);
+}
+
+.circleText span:nth-child(4) {
+  transform: rotate(26.34deg);
+}
+
+.circleText span:nth-child(5) {
+  transform: rotate(35.12deg);
+}
+
+.circleText span:nth-child(6) {
+  transform: rotate(43.9deg);
+}
+
+.circleText span:nth-child(7) {
+  transform: rotate(52.68deg);
+  color: transparent;
+  background: linear-gradient(90deg, #4158d0, #c850c0 30%, #ffcc70);
+  -webkit-background-clip: text;
+}
+
+.circleText span:nth-child(8) {
+  transform: rotate(61.46deg);
+}
+
+.circleText span:nth-child(9) {
+  transform: rotate(70.24deg);
+}
+
+.circleText span:nth-child(10) {
+  transform: rotate(79.02deg);
+}
+
+.circleText span:nth-child(11) {
+  transform: rotate(87.2deg);
+}
+
+.circleText span:nth-child(12) {
+  transform: rotate(96.58deg);
+}
+
+.circleText span:nth-child(13) {
+  transform: rotate(105.36deg);
+}
+
+.circleText span:nth-child(14) {
+  transform: rotate(114.14deg);
+}
+
+.circleText span:nth-child(15) {
+  transform: rotate(122.92deg);
+}
+
+.circleText span:nth-child(16) {
+  transform: rotate(131.7deg);
+  color: transparent;
+  background: linear-gradient(90deg, #4158d0, #c850c0 30%, #ffcc70);
+  -webkit-background-clip: text;
+}
+
+.circleText span:nth-child(17) {
+  transform: rotate(140.48deg);
+}
+
+.circleText span:nth-child(18) {
+  transform: rotate(149.26deg);
+}
+
+.circleText span:nth-child(19) {
+  transform: rotate(158.04deg);
+}
+
+.circleText span:nth-child(20) {
+  transform: rotate(166.82deg);
+}
+
+.circleText span:nth-child(21) {
+  transform: rotate(175.6deg);
+}
+
+.circleText span:nth-child(22) {
+  transform: rotate(184.38deg);
+}
+
+.circleText span:nth-child(23) {
+  transform: rotate(193.16deg);
+}
+
+.circleText span:nth-child(24) {
+  transform: rotate(201.94deg);
+}
+
+.circleText span:nth-child(25) {
+  transform: rotate(210.72deg);
+}
+
+.circleText span:nth-child(26) {
+  transform: rotate(219.45deg);
+}
+
+.circleText span:nth-child(27) {
+  transform: rotate(228.28deg);
+}
+
+.circleText span:nth-child(28) {
+  transform: rotate(237.06deg);
+}
+
+.circleText span:nth-child(29) {
+  transform: rotate(245.84deg);
+  color: transparent;
+  background: linear-gradient(90deg, #4158d0, #c850c0 30%, #ffcc70);
+  -webkit-background-clip: text;
+}
+
+.circleText span:nth-child(30) {
+  transform: rotate(254.62deg);
+}
+
+.circleText span:nth-child(31) {
+  transform: rotate(263.4deg);
+}
+
+.circleText span:nth-child(32) {
+  transform: rotate(272.18deg);
+}
+.circleText span:nth-child(33) {
+  transform: rotate(280.96deg);
+}
+.circleText span:nth-child(34) {
+  transform: rotate(289.74deg);
+}
+.circleText span:nth-child(35) {
+  transform: rotate(298.52deg);
+}
+.circleText span:nth-child(36) {
+  transform: rotate(307.3deg);
+}
+.circleText span:nth-child(37) {
+  transform: rotate(316.08deg);
+}
+.circleText span:nth-child(38) {
+  transform: rotate(324.86deg);
+}
+.circleText span:nth-child(39) {
+  transform: rotate(333.64deg);
+}
+.circleText span:nth-child(40) {
+  transform: rotate(342.42deg);
+  color: transparent;
+  background: linear-gradient(90deg, #4158d0, #c850c0 30%, #ffcc70);
+  -webkit-background-clip: text;
+}
+.circleText span:nth-child(41) {
+  transform: rotate(351.2deg);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes inDown {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
