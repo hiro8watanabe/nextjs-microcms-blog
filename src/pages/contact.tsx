@@ -4,7 +4,7 @@ import styles from "src/styles/Home.module.css";
 import { Layout } from "src/components/Layout";
 import utilStyles from "src/styles/Utils.module.css";
 import Link from "next/link";
-import { Form } from "src/components/Form/Form";
+import { Form } from "src/components/Form";
 // import { getPostsData } from "../lib/post";
 // import { client } from "../lib/client";
 // import { formatDate } from "../lib/util";

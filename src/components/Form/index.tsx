@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import type { NextPage } from "next";
 import formStyles from "src/components/Form/Form.module.css";
 import { Loading } from "src/components/Form/Loading";
@@ -17,7 +17,7 @@ export const Form: NextPage = () => {
   const [mailFlag, setMailFlag] = useState<boolean>(true);
   const [messageFlag, setMessageFlag] = useState<boolean>(true);
 
-  const handleSubmit = (e: React.FormEvent<HTMLInputElement>) => {
+  const handleSubmit = useCallback( (e: React.FormEvent<HTMLInputElement>) => {
     e.preventDefault();
 
     const name = form.name;
@@ -58,9 +58,10 @@ export const Form: NextPage = () => {
           setMailFlag(true);
           setMessageFlag(true);
           setIsLoading(false);
+          setErrorMessage(false);
         });
     }
-  };
+  },[form.mail, form.msg, form.name])
 
   return (
     <>
