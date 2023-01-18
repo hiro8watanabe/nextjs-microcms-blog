@@ -13,6 +13,7 @@
 .wrap {
   transform-style: preserve-3d;
   perspective: 300px;
+  margin-left: 60px;
 }
 
 .container {
