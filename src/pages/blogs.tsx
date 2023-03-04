@@ -7,6 +7,36 @@ import Link from "next/link";
 // import { getPostsData } from "lib/post";
 import { client } from "lib/client";
 import { formatDate } from "lib/util";
+import React from "react";
+
+type Array = {
+  body: string;
+  createdAt: string;
+  id: string;
+  category: {
+    id: string;
+    createdAt: string;
+    updatedAt: string;
+    publishedAt: string;
+    revisedAt: string;
+    name: string;
+  };
+  updatedAt: string;
+  publishedAt: string;
+  revisedAt: string;
+  title: string;
+  thumbnail: {
+    url: string;
+    height: number;
+    width: number;
+  };
+
+  description: string;
+};
+
+type Props = {
+  blog: Array[];
+};
 
 //ssgの場合
 export const getStaticProps = async () => {
@@ -28,7 +58,8 @@ export const getStaticProps = async () => {
 //   };
 // }
 
-export default function Blog({ blog }) {
+export default function Blog({ blog }: Props) {
+  console.log(blog);
   return (
     <Layout blogs>
       <Head>
