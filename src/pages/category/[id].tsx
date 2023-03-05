@@ -136,14 +136,16 @@ export default function CategoryId({ blog }: Props) {
           {blog.map((blog) => (
             <article key={blog.id}>
               <Link href={`/blog/${blog.id}`}>
-                <Image
-                  src={blog.thumbnail.url}
-                  className={styles.thumbnailImage}
-                  width={950}
-                  height={534}
-                  objectFit="cover"
-                  alt={blog.title}
-                />
+                <a>
+                  <Image
+                    src={blog.thumbnail.url}
+                    className={styles.thumbnailImage}
+                    width={950}
+                    height={534}
+                    objectFit="cover"
+                    alt={blog.title}
+                  />
+                </a>
               </Link>
               <Link href={`/blog/${blog.id}`}>
                 <a
