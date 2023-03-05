@@ -7,10 +7,40 @@ import Link from "next/link";
 // import { getPostsData } from "lib/post";
 import { client } from "lib/client";
 import { formatDate } from "lib/util";
+import { GetStaticPaths } from "next/types";
+
+type Array = {
+  body: string;
+  createdAt: string;
+  id: string;
+  category: {
+    id: string;
+    createdAt: string;
+    updatedAt: string;
+    publishedAt: string;
+    revisedAt: string;
+    name: string;
+  };
+  updatedAt: string;
+  publishedAt: string;
+  revisedAt: string;
+  title: string;
+  thumbnail: {
+    url: string;
+    height: number;
+    width: number;
+  };
+  description: string;
+};
+
+type Props = {
+  blog: Array[];
+};
 
 //ssgの場合
 // データをテンプレートに受け渡す部分の処理を記述します
-export const getStaticProps = async (context) => {
+export const getStaticProps = async (context: { params: { id: string } }) => {
+  console.log(context);
   const id = context.params.id;
   const data = await client.get({
     endpoint: "blog",
@@ -25,9 +55,11 @@ export const getStaticProps = async (context) => {
 };
 
 // 静的生成のためのパスを指定
-export const getStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
   const data = await client.get({ endpoint: "categories" });
-  const paths = data.contents.map((content) => `/category/${content.id}`);
+  const paths = data.contents.map(
+    (content: { id: string }) => `/category/${content.id}`
+  );
   return {
     paths,
     fallback: false,
@@ -43,7 +75,7 @@ export const getStaticPaths = async () => {
 //   };
 // }
 
-export default function CategoryId({ blog }) {
+export default function CategoryId({ blog }: Props) {
   // カテゴリーに紐付いたコンテンツがない場合に表示
   if (blog.length === 0) {
     return (
@@ -82,7 +114,7 @@ export default function CategoryId({ blog }) {
           content="initial-scale=1.0, width=device-width, viewport-fit=cover"
         />
         <meta
-          key={blog.id}
+          key={blog[0].id}
           name="description"
           content={`${blog[0].category.name}に関連するカテゴリー記事一覧ページです。`}
         />

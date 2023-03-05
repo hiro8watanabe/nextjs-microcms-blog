@@ -30,7 +30,6 @@ type Array = {
     height: number;
     width: number;
   };
-
   description: string;
 };
 
@@ -59,7 +58,6 @@ export const getStaticProps = async () => {
 // }
 
 export default function Blog({ blog }: Props) {
-  console.log(blog);
   return (
     <Layout blogs>
       <Head>
