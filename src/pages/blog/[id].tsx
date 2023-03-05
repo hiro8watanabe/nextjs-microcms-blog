@@ -10,8 +10,36 @@ import "highlight.js/styles/vs2015.css";
 import Link from "next/link";
 import Image from "next/image";
 
+type Array = {
+  body: string;
+  createdAt: string;
+  id: string;
+  category: {
+    id: string;
+    createdAt: string;
+    updatedAt: string;
+    publishedAt: string;
+    revisedAt: string;
+    name: string;
+  };
+  updatedAt: string;
+  publishedAt: string;
+  revisedAt: string;
+  title: string;
+  thumbnail: {
+    url: string;
+    height: number;
+    width: number;
+  };
+  description: string;
+};
+
+type Props = {
+  blog: Array[];
+};
+
 //SSG
-export const getStaticProps = async (context) => {
+export const getStaticProps = async (context: { params: { id: string } }) => {
   //urlを取得
   const id = context.params.id;
   //idに対応したブログ記事を取得してくる。こちらはMicroCMSの記述
@@ -35,7 +63,9 @@ export const getStaticProps = async (context) => {
 export const getStaticPaths = async () => {
   const data = await client.get({ endpoint: "blog" });
 
-  const paths = data.contents.map((content) => `/blog/${content.id}`);
+  const paths = data.contents.map(
+    (content: { id: string }) => `/blog/${content.id}`
+  );
   return {
     paths,
     fallback: false,
